@@ -18,9 +18,9 @@ yt clean
 yt build
 ```
 
-The HEX file for you micro:bit with then be generated and stored in build\bbc-microbit-classic-gcc\source\microbit-samples-combined.hex
+The HEX file for your micro:bit will then be generated and stored in build\bbc-microbit-classic-gcc\source\microbit-samples-combined.hex
 
-n.b. Any samples using the low level RADIO APIs (such as simple-radio-rx and simple-radio-tx) require the bluetooth capabilities of the
+n.b. Any samples using the low level RADIO APIs (such as simple-radio-rx and simple-radio-tx) require the Bluetooth capabilities of the
 micro:bit to be disabled. To do this, simply copy the config.json file from the sample to the top level of your project. Don't forget to
 remove this file again later if you then want to use Bluetooth! For example:
 
@@ -34,7 +34,7 @@ cp source/examples/simple-radio-rx/config.json .
 
 The micro:bit runtime provides an easy to use environment for programming the BBC micro:bit in the C/C++ language, written by Lancaster University. It contains device drivers for all the hardware capabilities of the micro:bit, and also a suite of runtime mechanisms to make programming the micro:bit easier and more flexible. These range from control of the LED matrix display to peer-to-peer radio communication and secure Bluetooth Low Energy services. The micro:bit runtime is proudly built on the ARM mbed and Nordic nrf51 platforms.
 
-In addition to supporting development in C/C++, the runtime is also designed specifically to support higher level languages provided by our partners that target the micro:bit. It is currently used as a support library for all the languages on the BBC www.microbit.co.uk website, including Microsoft Block, Microsoft TouchDevelop, Code Kingdoms JavaScript and Micropython languages.
+In addition to supporting development in C/C++, the runtime is also designed specifically to support higher level languages provided by our partners that target the micro:bit. It is currently used as a support library for all the languages on the BBC www.microbit.co.uk website, including Microsoft Block, Microsoft TouchDevelop, Code Kingdoms JavaScript and Micro-python languages.
 
 ## Links
 
@@ -52,7 +52,7 @@ In addition to supporting development in C/C++, the runtime is also designed spe
 The DAL also contains a number of compile time options can be modified. A full list and explanation
 can be found in our [documentation](http://lancaster-university.github.io/microbit-docs/advanced/#compile-time-options-with-microbitconfigh).
 
-Alternately, `yotta` can be used to configure the dal regardless of module/folder structure, through providing a
+Alternately, `yotta` can be used to configure the DAL regardless of module/folder structure, through providing a
 `config.json` in this directory.
 
 Here is an example of `config.json` with all available options configured:
